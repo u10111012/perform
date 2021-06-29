@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>d'Perfume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar d-flex justify-content-between align-items-center my-3">
+        <h1 class="ml-md-4"><a href="index.html"><img src="img/d’Perfume.png" alt="logo-header"></a></h1>
+        <ul class="nav d-flex align-items-center">
+          <li class="nav__item ml-7 d-md-none hover-underline-primary"><a class="nav__link" href="shop.html"><span class="material-icons">store</span><span class="nav__text ml-1">Product</span></a></li>
+          <li class="nav__item ml-7 d-md-none hover-underline-primary"><a class="nav__link" href="login.html"><span class="material-icons">person</span><span class="nav__text ml-1">log in</span></a></li>
+          <li class="nav__item ml-7 d-md-none hover-underline-primary"><a class="nav__link" href="#"><span class="material-icons">favorite</span><span class="nav__text ml-1">Wishlist</span></a></li>
+          <li class="nav__item ml-7 hover-underline-primary"><a class="nav__link" href="#"><span class="material-icons">shopping_cart</span><span class="nav__text ml-1 d-md-none">Cart(3)</span><span class="nav__num d-none d-md-block">3</span></a></li>
+          <li class="nav__item ml-4 d-none d-md-inlineBlock hover-text-primary"><a class="navbar__toggler" href="#"><span class="material-icons">menu</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu bg-menu d-sm-none">
+      <div class="container py-3">
+        <ul class="d-flex ml-md-4">
+          <li class="menu__item"><a class="menu__btn" href="#">CHANEL</a></li>
+          <li class="menu__item ml-6"><a class="menu__btn" href="#">Jo Malone</a></li>
+          <li class="menu__item ml-6"><a class="menu__btn" href="#">Curology</a></li>
+          <li class="menu__item ml-6"><a class="menu__btn" href="#">Dior</a></li>
+          <li class="menu__item ml-6"><a class="menu__btn" href="#">Chloe</a></li>
+          <li class="menu__item ml-6"><a class="menu__btn" href="#">ZARA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container d-flex flex-md-column-reverse justify-content-between align-items-md-center pt-13 pb-12 py-sm-9">
+      <div class="col-8 col-md-6h col-sm-4"><img class="d-sm-none" src="img/product1.jpg" alt="product">
+        <div class="row d-flex flex-sm-column justify-content-between"><img class="col-4 col-md-3 col-sm-4 mb-md-3" src="img/product2.jpg" alt="product"><img class="col-4 col-md-3 col-sm-4 mb-md-3" src="img/product3.jpg" alt="product"></div><img src="img/product1.jpg" alt="product">
+      </div>
+      <div class="col-4 col-md-6h col-sm-4"><img class="d-none d-sm-block mb-sm-6" src="img/product1.jpg" alt="product">
+        <h2 class="product__title">CHANEL N°5</h2>
+        <p class="product__description mb-7">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+        <p class="product__price">NT$4,980</p>
+        <div class="select__wrap d-flex mb-2">
+          <input class="input__number" type="number" name="" value="1">
+          <input class="input__btn input__btn-lg" type="button" value="加入購物車">
+        </div>
+        <p class="mb-13 mb-md-9"><span class="material-icons btn-addToFav">favorite</span><span>加入我的收藏</span></p>
+        <h3 class="product__subtitle mb-2">商品購買須知</h3>
+        <p class="product__info mb-4">產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。 D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。</p>
+        <h3 class="product__subtitle mb-2">退換貨須知</h3>
+        <p class="product__info mb-4">依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。</p>
+      </div>
+    </div>
+    <footer class="py-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="footer__info d-flex align-items-center"><a href="index.html"><img src="img/d’Perfumewhite.png" alt="logo-footer"></a><span class="copyright ml-4">© 2020. All Rights Reserved.</span></div>
+        <ul class="footer__nav d-flex d-sm-none">
+          <li class="ml-8"><a href="shop.html">Product</a></li>
+          <li class="ml-8"><a href="#">Blog</a></li>
+          <li class="ml-8"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
