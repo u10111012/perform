@@ -1,0 +1,15 @@
+@mixin pad
+  @media screen and (max-width: $breakpoint-md)
+    @content
+
+@mixin phone
+  @media screen and (max-width: $breakpoint-sm)
+    @content
+
+@mixin size($w, $h)
+  width: $w
+  height: $h
+
+@mixin font($fz: $fz-base, $fw: 400)
+  font-size: $fz
+  font-weight: $fw

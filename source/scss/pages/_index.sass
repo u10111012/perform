@@ -1,0 +1,28 @@
+.banner
+  color: #fff
+  +phone
+    background-position: 10% center
+  .container
+    height: 870px
+    +pad
+      justify-content: center
+    +phone
+      height: 480px
+  &__title
+    +font($fz-1, $fw-bold)
+    +phone
+      +font($fz-2)
+  &__text
+    +font($fz-4)
+    +phone
+      +font($fz-5)
+
+.products
+  background: $color-light
+  .salesInfo
+    +font($fz-4,$fw-semibold)
+    color: #fff
+    position: absolute
+    top: 252px
+    left: 50%
+    transform: translateX(-50%)

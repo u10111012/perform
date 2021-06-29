@@ -1,0 +1,102 @@
+extends includes/_layout.pug
+block content 
+  .banner.bg.bg-banner
+    .container.d-flex.justify-content-end.align-items-center
+      .banner__info.col-5.col-sm-4
+        h2.banner__title Perfume your day
+        p.banner__text.mb-3.
+          A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that according to the person who wears it.
+        a.btn-rounded.btn-light.hover-bg-primary.col-4.col-sm-4(href="#") Shop now
+
+  .container.py-12.py-sm-9
+    ul
+      li.card.d-flex.flex-row-reverse.justify-content-center.align-items-center.flex-md-column.col-sm-4
+        img.card__img.mb-md-2(src="img/index1.jpg", alt="product")
+        .card__body.d-flex.flex-column.justify-content-center.align-items-center.col-6h.col-sm-4
+          .card__info.col-4.col-md-6h.col-sm-4
+            h2.card__title Gabrielle CHANEL
+            p.card__text.mb-3.
+              全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。
+            a.card__link.hover-text-primary.mb-md-7(href="product.html")  查看更多
+      li.card.d-flex.justify-content-center.align-items-center.flex-md-column.col-sm-4
+        img.card__img.mb-md-2(src="img/index2.png", alt="product")
+        .card__body.d-flex.flex-column.justify-content-center.align-items-center.col-6h.col-sm-4
+          .card__info.col-4.col-md-6h.col-sm-4
+            h2.card__title Five O’clock Au Gingembre
+            p.card__text.mb-3.
+              生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。
+            a.card__link.hover-text-primary.mb-md-7(href="product.html")  查看更多
+      li.card.d-flex.flex-row-reverse.justify-content-center.align-items-center.flex-md-column.col-sm-4
+        img.card__img.mb-md-2(src="img/index3.jpg", alt="product")
+        .card__body.d-flex.flex-column.justify-content-center.align-items-center.col-6h.col-sm-4
+          .card__info.col-4.col-md-6h.col-sm-4
+            h2.card__title CHANEL N°5
+            p.card__text.mb-3.
+              N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。
+            a.card__link.hover-text-primary.mb-md-7(href="product.html")  查看更多
+      li.card.d-flex.justify-content-center.align-items-center.flex-md-column.col-sm-4
+        img.card__img.mb-md-2(src="img/index4.jpg", alt="product")
+        .card__body.d-flex.flex-column.justify-content-center.align-items-center.col-6h.col-sm-4
+          .card__info.col-4.col-md-6h.col-sm-4
+            h3.card__subtitle 1. 
+              br
+              | Levels of Preventive Maintenance Compliance
+            p.card__text.card__text-small.mb-11.
+              The core idea of preventative maintenance is the performance of proactive actions against unscheduled downtime in order to identify potential defects before they evolve into something more severe.
+            h3.card__subtitle 2.
+              br
+              | Percentage of Planned Maintenance
+            p.card__text.card__text-small.mb-11.
+              The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date range over the total number of hours of a service performed by the technicians.
+            h3.card__subtitle 3. 
+              br
+              | Critical percentage of planned maintenance
+            p.card__text.card__text-small.mb-12.
+              Calculating the critical percentage of planned maintenance will help you prioritize the most important operations that should be performed immediately.
+            a.btn-rounded.hover-bg-block(href="#") Plan a free online training
+
+  .products 
+    .container.py-9.py-sm-7
+      ul.d-flex.justify-content-between.align-items-center.flex-md-column
+        li.card.d-flex.flex-column.mb-md-7.hover-shadow-dark
+          img.card__img.mb-2(src="img/index5.jpg", alt="perfume")
+          .card__body
+            .card__info
+              h3.card__subtitle 
+                a.hover-text-primary(href="#") Poppy & Barley
+              p.card__text-small.mb-3.mb-sm-1 Jo Malone
+              span.card__text-small NT$1,380
+              span.card__text-small.card__text-delete.ml-2 NT$1,580
+        li.card.d-flex.flex-column.mb-md-7.hover-shadow-dark
+          img.card__img.mb-2(src="img/index6.jpg", alt="perfume")
+          .card__body
+            .card__info
+              h3.card__subtitle 
+                a.hover-text-primary(href="#") Body Wash
+              p.card__text-small.mb-3.mb-sm-1 Curology
+              span.card__text-small NT$1,580
+        li.card.d-flex.flex-column.hover-shadow-dark
+          img.card__img.filter.mb-2(src="img/index7.jpg", alt="perfume")
+          p.salesInfo Sold out
+          .card__body
+            .card__info
+              h3.card__subtitle 
+                a.hover-text-primary(href="#") Apple Cider Vinegar Capsule
+              p.card__text-small.mb-3.mb-sm-1 Tonik
+              span.card__text-small NT$1,580
+
+  .container.py-12.py-sm-9
+    .card.d-flex.flex-md-column.justify-content-between.align-items-center
+      img.card__img.col-8.mb-md-2(src="img/index8.jpg", alt="perfume")
+      .card__body.d-flex.justify-content-center.align-items-center.col-4.col-md-6h.col-sm-4
+        .card__info
+          h2.card__title Bottle-Recycling
+          p.card__text.
+            Recycle your used empty bottles and be rewarded!
+          p.card__text-small.my-3.my-md-2.
+            For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.
+          a.card__link.hover-text-primary(href="#") 查看更多
+
+block subscribe
+  include includes/_subscribe.pug
+

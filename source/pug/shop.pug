@@ -1,0 +1,47 @@
+extends includes/_layout.pug
+block header-menu
+  include includes/_header-menu.pug
+
+block content 
+
+  mixin item(img)
+    li.card.d-flex.flex-column.col-3.col-md-3-n.col-sm-2.mb-12.mb-sm-7
+      .hover-shadow-primary
+        img.card__img(src= img, alt="perfume")
+        .card__body
+          .card__info
+            h2.card__subtitle 
+              a.hover-text-primary(href="#") Poppy & Barley
+            p.card__text-small Jo Malone
+            span.card__text-small NT$1,380
+            span.card__text-small.card__text-delete.ml-2 NT$1,580
+            p.mt-1
+              span.material-icons favorite
+              span.material-icons shopping_cart
+
+  .shopItems.container.py-13.py-sm-9
+    ul.d-flex.flew-wrap.justify-content-between.justify-content-md-around.align-items-center
+      +item("img/shop1.jpg")
+      +item("img/shop2.jpg")
+      +item("img/shop3.jpg")
+      +item("img/shop4.jpg")
+      +item("img/shop5.jpg")
+      +item("img/shop6.jpg")
+      +item("img/shop7.jpg")
+      +item("img/shop8.jpg")
+      +item("img/shop9.jpg")
+      +item("img/shop10.jpg")
+      +item("img/shop11.jpg")
+      +item("img/shop12.jpg")
+
+
+  ul.pagination.d-flex.justify-content-center.mb-12.mb-sm-9
+    li.pagination__item 
+      a.pagination__link.pagination__link-active(href="#") 1
+    li.pagination__item.ml-4
+      a.pagination__link(href="#") 2
+    li.pagination__item.ml-4
+      a.pagination__link(href="#") 3 
+
+block subscribe 
+  include includes/_subscribe.pug
