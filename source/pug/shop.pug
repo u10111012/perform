@@ -5,19 +5,20 @@ block header-menu
 block content 
 
   mixin item(img)
-    li.card.d-flex.flex-column.col-3.col-md-3-n.col-sm-2.mb-12.mb-sm-7
+    li.card.d-flex.flex-column.col-3.col-md-6n.mb-12.mb-sm-7
       .hover-shadow-primary
-        img.card__img(src= img, alt="perfume")
+        a(href="product.html") 
+          img.card__img(src= img, alt="perfume")
         .card__body
           .card__info
-            h2.card__subtitle 
-              a.hover-text-primary(href="#") Poppy & Barley
+            h2.card__subtitle
+              a.hover-text-primary(href="product.html") Poppy & Barley
             p.card__text-small Jo Malone
-            span.card__text-small NT$1,380
-            span.card__text-small.card__text-delete.ml-2 NT$1,580
+            p.card__text-small.d-inline NT$1,380
+            p.card__text-small.card__text-delete.d-inline.ml-2 NT$1,580
             p.mt-1
-              span.material-icons favorite
-              span.material-icons shopping_cart
+              a(href="#").material-icons favorite
+              a(href="#").material-icons shopping_cart
 
   .shopItems.container.py-13.py-sm-9
     ul.d-flex.flew-wrap.justify-content-between.justify-content-md-around.align-items-center

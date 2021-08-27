@@ -3,7 +3,7 @@
   position: relative
 
 body
-  font-family: "SF Pro Text", "蘋方-繁", "Noto Sans TC", "Roboto"
+  font-family: "SF Pro Text", "PingFang TC", "Noto Sans TC", "Roboto"
   font-size: $fz-base
   font-weight: $fw-regular
   line-height: 1.5
@@ -12,6 +12,9 @@ input
   outline: none
   border: none
   transition: .2s
+
+input[type="button"]
+  cursor: pointer
 
 a
   display: block
@@ -22,7 +25,23 @@ a
 img
   max-width: 100%
   height: auto
+  display: block
 
 .material-icons
   vertical-align: middle
   font-size: 20px
+
+.container
+  max-width: $width-xl
+  margin: 0 auto
+  padding-left: 15px
+  padding-right: 15px
+  +pad
+    max-width: $width-md
+  +phone
+    max-width: $width-sm
+    padding-left: 0
+    padding-right: 0
+
+.row
+  width: 100%

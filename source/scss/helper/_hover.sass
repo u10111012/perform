@@ -13,7 +13,7 @@
     background: $color-secondary
     border-color: $color-secondary
 
-.hover-bg-block
+.hover-bg-black
   &:hover
     background: #000
     border-color: #000
@@ -23,15 +23,17 @@
   &:hover
     color: $color-primary
 
+.hover-text-secondary
+  &:hover
+    color: $color-secondary
+
 .hover-shadow-primary
-  cursor: pointer
   transition: .2s
   &:hover
     box-shadow: 3px 3px 3px 3px rgba($color-primary, .2)
     transform: translate(-3px, -3px)
 
 .hover-shadow-dark
-  cursor: pointer
   transition: .2s
   &:hover
     box-shadow: 3px 3px 3px 3px rgba(#aaa, .3)
