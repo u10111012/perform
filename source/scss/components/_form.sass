@@ -1,32 +1,111 @@
-.input
-  &__wrap
-  &__text
-    border: 2px solid $color-primary
+input, .btn, select
+  border-radius: 4px
+
+input[type="text"],
+input[type="number"],
+  border: 1px solid $color-info
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="phone"]:focus
+  box-shadow: 0px 0px 3px 3px rgba($color-primary, 0.4)
+
+input[type="button"], .btn
+  background: $color-primary
+  border: 1px solid $color-primary
+  color: #fff
+  cursor: pointer
+
+.input__group-text,
+.input__group-number
+  input
+    border-color: $color-primary
+  input:focus,
+  input:focus ~ input[type="button"]
+    box-shadow: none
+  input[type="text"],
+  input[type="number"]
+    border-radius: 4px 0px 0px 4px
+  input[type="button"]
+    border-radius: 0px 4px 4px 0px
+
+.input__group-text
+  input
     line-height: 24px
+    border-width: 2px
+  input[type="text"]
     padding: 18px 16px
     width: 220px
-  &__number
-    +font($fz-base)
-    border: 1px solid $color-primary
-    border-radius: 4px 0 0 4px
-    padding: 16px
+    &::placeholder
+      font-weight: medium
+  input[type="button"]
+    padding: 18px 26px
+
+.input__group-number
+  input[type="number"]
     line-height: 18px
+    padding: 16px
     width: 160px
     +phone
       width: 157px
-  &__btn
-    +font($fz-base, $fw-medium)
-    border: 2px solid $color-primary
-    border-radius: 0px 4px 4px 0px
+  input[type="button"]
+    line-height: 22px
+    padding: 14px 55px
+
+.input__group-login
+  input[type="text"]
+    line-height: 19px
+    padding: 9.5px 12px
+    width: 100%
+
+.btn-wrap
+  margin-bottom: 106px
+  .link
+    color: $color-primary
+  .btn
+    display: inline-block
+    line-height: 22px
+    padding: 8px 16px
+  .btn__outline-primary
+    background: transparent
+    color: $color-primary
+    &:hover
+      background: $color-secondary
+      border-color: $color-secondary
+      color: #fff
+
+.input__group-member
+  color: #818A91
+  .input__text, .select,.btn
+    line-height: 22px
+  .input__text, .select
+    padding: 8px 10px
+    border: 1px solid #CED4DA
+  .select
+    color: #818A91
+  .btn
+    padding: 8px 48px
+    margin-left: 95px
+    +phone
+      margin-left: 90px
+  .label-checkbox
+    cursor: pointer
+  .input__checkbox
+    display: none
+  .input__checkbox + span:before
+    content: ""
+    display: inline-block
+    width: 15px
+    height: 15px
+    border: 1px solid $color-primary
+    border-radius: 4px
+    margin-right: 4px
+    top: 2px
+  .input__checkbox:checked + span:before
+    content: "\2714"
     background: $color-primary
     color: #fff
-    line-height: 24px
-    padding: 18px 26px
-    margin-left: -4px
-    &-lg
-      line-height: 22px
-      padding: 14px 55px
-
-.select
-  &__wrap
-    vertical-align: middle
+    top: 2px
+    font-size: 10px
+    line-height: 15px
+    text-align: center

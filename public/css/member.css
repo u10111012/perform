@@ -1,0 +1,28 @@
+.menu {
+  color: #848484;
+}
+
+.menu .link {
+  display: inline-block;
+}
+
+.menu .link-active {
+  border-bottom: 2px solid #916000;
+}
+
+.title {
+  border-bottom: 1px solid #818A91;
+}
+
+.shopInfo {
+  color: #818a91;
+}
+
+.shopInfo .memberNumber {
+  color: #8d8d8d;
+}
+
+.shopInfo .description {
+  color: #a5a5a5;
+}
+/*# sourceMappingURL=member.css.map */

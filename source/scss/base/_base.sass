@@ -8,13 +8,18 @@ body
   font-weight: $fw-regular
   line-height: 1.5
 
-input
+input, select
   outline: none
   border: none
   transition: .2s
-
-input[type="button"]
-  cursor: pointer
+  &::placeholder
+    color: $color-info
+  &::-webkit-input-placeholder
+    color: $color-info
+  &::-moz-placeholder
+    color: $color-info
+  &::-ms-input-placeholder
+    color: $color-info
 
 a
   display: block

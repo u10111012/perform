@@ -1,0 +1,23 @@
+extends includes/_layout.pug
+block header-menu
+  include includes/_header-menu.pug
+
+block content 
+  .container.d-flex.flex-md-column.justify-content-between.align-items-md-center
+    .col-8.col-sm-12.mt-13.mt-md-9.mb-13.mb-md-6
+      img(src="img/login.jpg", alt="login")
+    form.col-4.col-md-8.col-sm-12.d-flex.flex-column.justify-content-center
+      h2.fz-2.fw-bold.mb-3 Log in 
+      .input__group-login
+        label.d-block(for="account") 帳號
+        input.mt-1.mb-4(type="text" name="account" placeholder="email@example.com")
+        label.d-block(for="password") 密碼
+        input.mt-1.mb-8(type="text" name="password" placeholder="password")
+      .btn-wrap.d-flex.justify-content-between.align-items-center
+        a.link.fw-medium.hover-underline-primary(href="#") 忘記密碼
+        .btn-group 
+          a.btn.btn__outline-primary(href="#") 註冊
+          a.btn.hover-bg-secondary.ml-2(href="member.html") 登入
+
+
+

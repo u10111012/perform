@@ -1,0 +1,103 @@
+extends includes/_layout.pug
+block header-menu
+  include includes/_header-menu.pug
+
+block content 
+  .container
+    .row.d-flex.flex-md-column.justify-content-between.mt-13.mt-sm-9.mb-12.mb-sm-9
+      .menu.col-2.col-md-6.col-sm-12
+        h2.fz-5.fw-medium.mb-6.d-md-none 會員中心
+        ul.d-md-flex.justify-content-md-between
+          li.mb-5
+            a.link.link-active.hover-underline-primary(href="#") 會員資料修改
+          li.mb-5
+            a.link.hover-underline-primary(href="#") 訂單查詢
+          li.mb-5
+            a.link.hover-underline-primary(href="#") 退/換貨申請
+      .col-10.col-md-12.d-flex.flex-sm-column-reverse.justify-content-between
+        .col-8.col-sm-12.d-flex.flex-column
+          h3.title.text-black.fw-medium.pb-2.mb-3 個人資料修改
+          form
+            .input__group-member
+              .mb-4.d-flex
+                label.col-2.col-sm-3(for="account") 會員帳號
+                p.col-6.col-sm-9.ml-3.ml-sm-0 email@example.com
+              .mb-4.d-flex
+                label.col-2.col-sm-3(for="name") 會員姓名
+                input#name.input__text.col-6.col-sm-9(type="text")
+              .mb-4.d-flex
+                label.col-2.col-sm-3(for="gender") 會員姓名
+                select#gender.select.col-2.col-sm-9
+                  option(value="male") 男
+                  option(value="female" selected) 女
+              .mb-4.d-flex
+                label.col-2.col-sm-3(for="email") 電子信箱
+                input#email.input__text.col-6.col-sm-9(type="email" placeholder="email@example.com")
+              .mb-4.d-flex
+                label.col-2.col-sm-3(for="phone") 手機號碼
+                input#phone.input__text.col-6.col-sm-9(type="tel")
+              .mb-4.d-flex
+                label.col-2.col-sm-3(for="address") 聯絡地址
+                .col-6.col-sm-9
+                  select#country.select.mb-2.col-6
+                    option(value="taiwan") 台灣及離島 
+                  .d-flex
+                    select#city.select.mb-2.col-6.mr-2
+                      option 高雄市 
+                    select#zip.select.mb-2.col-6
+                      option 鹽埕區 
+                  input.input__text.mb-2.col(type="text" placeholder="請輸入地址")
+                  br
+                  label.label-checkbox(for="subscribe")
+                    input#subscribe.input__checkbox(type="checkbox", name="subscribe" checked)
+                    span 我願意收到最新優惠情報
+              .mb-3.d-flex
+                label.col-2.col-sm-3(for="address") 配送地址
+                .col-6.col-sm-9
+                  select.select.mb-2.col-6
+                    option(value="taiwan") 台灣及離島 
+                  .d-flex
+                    select.select.mb-2.col-6.mr-2
+                      option(value="taiwan") 高雄市 
+                    select.select.mb-2.col-6
+                      option(value="taiwan") 鹽埕區 
+                  input.input__text.mb-3.col(type="text" placeholder="請輸入地址")
+              .mb-10 
+                input.btn.hover-bg-secondary(type="button", value="確定修改")
+          h3.title.text-black.fw-medium.pb-2.mb-3 修改密碼
+          form 
+            .input__group-member 
+              .mb-4.d-flex
+                label.col-2.col-sm-3(for="oldPassword") 舊密碼
+                input#oldPassword.input__text.col-6.col-sm-9(type="text")
+              .mb-4.d-flex
+                label.col-2.col-sm-3(for="newPassword") 新密碼
+                input#newPassword.input__text.col-6.col-sm-9(type="text")
+              .mb-3.d-flex
+                label.col-2.col-sm-3(for="checkPassword") 確認密碼
+                input#checkPassword.input__text.col-6.col-sm-9(type="text")
+              .mb-12
+                input.btn.hover-bg-secondary(type="button", value="變更密碼")
+        .shopInfo.col-4.col-sm-12
+          h2.mb-5
+            span.material-icons.text-black person
+            span.ml-1 會員編碼
+            span.ml-1.memberNumber T00020080615
+          ul
+            li.d-flex.mb-3
+              p.col-4 購物車
+              p.col-8 56
+            li.d-flex.mb-3
+              p.col-4 我的收藏
+              p.col-8 23
+            li.d-flex.mb-3
+              p.col-4 完成訂單
+              p.col-8 8
+            li.d-flex.mb-3
+              p.col-4 會員紅利
+              p.col-8 2680
+            li.d-flex
+              p.col-4 邀請碼
+              p.col-8 TK2075
+            li.mb-9
+              p.fz-7.description 新戶輸入邀請碼即可獲贈紅利點數1000點
