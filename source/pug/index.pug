@@ -1,4 +1,8 @@
 extends includes/_layout.pug
+block header-nav
+  - var login = "log in"
+  include includes/_header-nav.pug
+
 block content 
   .banner.bg.bg-banner
     .container.d-flex.justify-content-end.align-items-center
