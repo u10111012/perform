@@ -1,26 +1,26 @@
-@import "base/_reset";
+@import "base/reset";
 
-@import "helper/_variable";
-@import "helper/_mixin";
-@import "helper/_spacing";
-@import "helper/_flex";
-@import "helper/_grid";
-@import "helper/_display";
-@import "helper/_hover";
-@import "helper/_filter";
-@import "helper/_background";
-@import "helper/_text";
+@import "helper/variable";
+@import "helper/mixin";
+@import "helper/spacing";
+@import "helper/flex";
+@import "helper/grid";
+@import "helper/display";
+@import "helper/hover";
+@import "helper/filter";
+@import "helper/background";
+@import "helper/text";
 
-@import "base/_base";
-@import "components/_card";
-@import "components/_button";
-@import "components/_form";
-@import "components/_pagination";
+@import "base/base";
+@import "components/card";
+@import "components/button";
+@import "components/form";
+@import "components/pagination";
 
-@import "layout/_nav";
-@import "layout/_menu";
-@import "layout/_subscribe";
-@import "layout/_footer";
+@import "layout/nav";
+@import "layout/menu";
+@import "layout/subscribe";
+@import "layout/footer";
 @import "layout/overlay";
 
 @import "pages/index";

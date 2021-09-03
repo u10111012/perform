@@ -27,7 +27,7 @@
         "../../../source/scss/pages/_index.sass",
         "../../../source/scss/pages/_shop.sass",
         "../../../source/scss/pages/_product.sass",
-        "../../../source/scss/pages/member.sass"
+        "../../../source/scss/pages/_member.sass"
     ],
     "names": [],
     "file": "all.min.css"
