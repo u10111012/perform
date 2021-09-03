@@ -1085,7 +1085,6 @@ input[type="button"], .btn {
   position: absolute;
   top: -4px;
   right: -8px;
-  z-index: 1;
 }
 
 .navbar__toggler {
