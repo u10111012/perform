@@ -3,24 +3,37 @@
     h1.ml-md-4
       a(href="index.html")
         img(src="img/d’Perfume.png", alt="logo-header")
-    ul.nav.d-flex.align-items-center
-      li.nav__item.ml-7.d-md-none.hover-underline-primary
-        a.nav__link(href="shop.html")
+    ul.nav.text-info.fz-5.d-flex.align-items-center
+      li.nav__item.ml-7.d-sm-none.hover-underline-primary
+        a.nav__link.pb-1(href="shop.html")
           span.material-icons store
           span.nav__text.ml-1 Product
-      li.nav__item.ml-7.d-md-none.hover-underline-primary
-        a.nav__link(href="login.html")
+      li.nav__item.ml-7.d-sm-none.hover-underline-primary
+        a.nav__link.pb-1(href="login.html")
           span.material-icons person
           span.nav__text.ml-1 #{login}
-      li.nav__item.ml-7.d-md-none.hover-underline-primary
-        a.nav__link(href="#")
+      li.nav__item.ml-7.d-sm-none.hover-underline-primary
+        a.nav__link.pb-1(href="#")
           span.material-icons favorite
           span.nav__text.ml-1 Wishlist
       li.nav__item.ml-7.hover-underline-primary
-        a.nav__link(href="#")
+        a.nav__link.pb-1(href="#")
           span.material-icons shopping_cart
-          span.nav__text.ml-1.d-md-none Cart(3)
-          span.nav__num.d-none.d-md-block 3
-      li.nav__item.ml-4.d-none.d-md-inlineBlock.hover-text-primary
-        a.navbar__toggler(href="#")
-          span.material-icons menu
+          span.nav__text.ml-1.d-sm-none Cart(3)
+          span.nav__num.d-none.d-sm-block 3
+      li.nav__item.ml-4.d-none.d-sm-inlineBlock.hover-text-primary
+        a#navbar__toggler.text-center(href="#")
+          span.material-icons.fz-1 menu
+
+
+ul#burgerNav.fz-5.text-white.text-center.bg-white.pt-11
+  li
+    a.py-3.bg-overlay.hover-bg-primary(href="shop.html") Product
+  li
+    a.py-3.bg-overlay.hover-bg-primary(href="#") Wishlist
+  li
+    a.py-3.bg-overlay.hover-bg-primary(href="#") Blog
+  li
+    a.py-3.bg-overlay.hover-bg-primary(href="#") Contact
+  li
+    a.py-3.bg-overlay.hover-bg-primary(href="login.html") #{login}

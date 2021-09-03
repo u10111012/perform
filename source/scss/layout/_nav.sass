@@ -1,10 +1,4 @@
 .nav
-  &__item
-    color: $color-info
-  &__link
-    padding-bottom: $spacer-1
-  &__text
-    +font($fz-5)
   &__num
     +font(8px, $fw-regular)
     width: $spacer-3
@@ -15,10 +9,22 @@
     position: absolute
     top: -($spacer-1)
     right: -($spacer-2)
-    // z-index: 1
 
-.navbar__toggler
-  text-align: center
+#navbar__toggler
   .material-icons
-    font-size: $fz-1
     padding: $spacer-2
+
+#burgerNav
+  height: 100vh
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  transform: translateX(-100%)
+  z-index: 2
+  a
+    border-bottom: 1px solid #fff
+  &.active
+    transform: translateX(0%)
+    transition: 0.2s

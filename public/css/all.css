@@ -125,6 +125,10 @@ table {
   margin-bottom: 48px;
 }
 
+.mt-11 {
+  margin-top: 52px;
+}
+
 .mb-11 {
   margin-bottom: 52px;
 }
@@ -141,8 +145,17 @@ table {
   margin-bottom: 80px;
 }
 
+.pb-1 {
+  padding-bottom: 4px;
+}
+
 .pb-2 {
   padding-bottom: 8px;
+}
+
+.px-3 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .py-3 {
@@ -158,6 +171,10 @@ table {
 .py-9 {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.pt-11 {
+  padding-top: 52px;
 }
 
 .py-12 {
@@ -489,6 +506,9 @@ table {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+  }
+  .d-sm-inlineBlock {
+    display: inline-block;
   }
 }
 
@@ -1061,19 +1081,6 @@ input[type="button"], .btn {
   border-bottom: 2px solid #AC8A46;
 }
 
-.nav__item {
-  color: #8D8D8D;
-}
-
-.nav__link {
-  padding-bottom: 4px;
-}
-
-.nav__text {
-  font-size: 20px;
-  font-weight: 400;
-}
-
 .nav__num {
   font-size: 8px;
   font-weight: 400;
@@ -1087,19 +1094,34 @@ input[type="button"], .btn {
   right: -8px;
 }
 
-.navbar__toggler {
-  text-align: center;
-}
-
-.navbar__toggler .material-icons {
-  font-size: 40px;
+#navbar__toggler .material-icons {
   padding: 8px;
 }
 
-.menu__btn {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
+#burgerNav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: 2;
+}
+
+#burgerNav a {
+  border-bottom: 1px solid #fff;
+}
+
+#burgerNav.active {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 @media screen and (max-width: 576px) {
