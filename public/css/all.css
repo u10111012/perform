@@ -578,6 +578,18 @@ table {
   background: #E0E0E0;
 }
 
+.bg-overlay {
+  background: #707070;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .text-black {
   color: #000;
 }
@@ -796,6 +808,10 @@ img {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.container-fluid {
+  width: 100%;
 }
 
 .row {
@@ -1120,6 +1136,15 @@ footer__nav {
 .copyright {
   font-size: 14px;
   font-weight: 500;
+}
+
+#overlay {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .banner {
