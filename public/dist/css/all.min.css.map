@@ -19,7 +19,7 @@
         "../../../source/scss/components/_button.sass",
         "../../../source/scss/components/_form.sass",
         "../../../source/scss/components/_pagination.sass",
-        "../../../source/scss/layout/_navbar.sass",
+        "../../../source/scss/layout/_nav.sass",
         "../../../source/scss/layout/_menu.sass",
         "../../../source/scss/layout/_subscribe.sass",
         "../../../source/scss/layout/_footer.sass",
@@ -27,7 +27,7 @@
         "../../../source/scss/pages/_index.sass",
         "../../../source/scss/pages/_shop.sass",
         "../../../source/scss/pages/_product.sass",
-        "../../../source/scss/pages/member.sass"
+        "../../../source/scss/pages/_member.sass"
     ],
     "names": [],
     "file": "all.min.css"
